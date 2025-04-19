@@ -49,7 +49,7 @@ const About = () => {
   return (
     <div
       style={{
-        backgroundImage: `url('/your-background.jpg')`,
+        backgroundImage: `url('/About.jpg')`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
@@ -149,6 +149,7 @@ const About = () => {
           ))}
         </div>
       </div>
+      <Footer />
 
       
     </div>

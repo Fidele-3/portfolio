@@ -32,8 +32,8 @@ const Footer = () => {
             marginBottom: "10px",
           }}>📍 Address</h3>
           <p style={{ color: "#ccc" }}>
-            KN 123 Street, Kigali City <br />
-            Rwanda, 00000
+            Kicukiro, Kigali City <br />
+            Rwanda
           </p>
         </div>
 
@@ -50,7 +50,7 @@ const Footer = () => {
             flexWrap: "wrap"
           }}>
             <a
-              href="https://wa.me/250780000000"
+              href="https://wa.me/250786161794"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -70,7 +70,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:fidelensanzumuhire9@gmail.com"
               style={{
                 padding: "10px 20px",
                 backgroundColor: "#ff0066",

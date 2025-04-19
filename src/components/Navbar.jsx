@@ -115,7 +115,7 @@ export default function Navbar() {
       <div style={styles.container}>
         <div style={styles.brand}>
           <img
-            src="/profile.jpg"
+            src="/profile.png"
             alt="Logo"
             style={styles.logoImg}
           />

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Importing BrowserRouter
+import { Route, Routes, Navigate } from "react-router-dom"; // Import Navigate
 import { motion } from "framer-motion";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -7,7 +7,7 @@ import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 
 function App() {
-  console.log("App component is rendering");  // Add this log to check
+  console.log("App component is rendering");
 
   return (
     <div className="App">
@@ -16,9 +16,8 @@ function App() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-       
-
         <Routes>
+          <Route path="/" element={<Navigate to="/Home" />} /> {/* ✅ Default route */}
           <Route path="/Home" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/projects" element={<Projects />} />

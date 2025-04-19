@@ -96,7 +96,7 @@ const Hero = () => {
           Hello, I'm NSANZUMUHIRE FIDELE
         </h1>
         <p className="hero-subtitle glow-text" style={{ marginTop: "1.5rem" }}>
-          Full Stack Developer | Cybersecurity Enthusiast | AI Engineer
+          Full Stack Developer | Cybersecurity Enthusiast | AI Engineer | Architect
         </p>
         <a href="/about" className="hero-btn">
           Learn More About Me

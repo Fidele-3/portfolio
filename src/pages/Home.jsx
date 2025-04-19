@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div
       style={{
-        backgroundImage: `url('/path-to-your-background.jpg')`, // Replace with your actual background image
+        backgroundImage: `url('/HomeBackground.jpg')`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",

@@ -1,6 +1,8 @@
 // src/components/Contact.jsx
 import React, { useState } from "react";
 
+import emailjs from "@emailjs/browser";
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -13,9 +15,29 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Message sent! (This should connect to your email backend)");
-  };
 
+    emailjs
+      .send(
+        "service_vlrszop",               // Your Service ID
+        "template_54mobbl",              // Your Template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+        },
+        "ezUmBoqb0L48oeJ2Z"           // Replace with your Public Key (found in EmailJS dashboard)
+      )
+      .then(
+        () => {
+          alert("Message sent successfully!");
+          setFormData({ name: "", email: "", message: "" });
+        },
+        (error) => {
+          console.error("EmailJS error:", error);
+          alert("Failed to send message, please try again.");
+        }
+      );
+  };
   return (
     <div style={{
       width: "100%",
@@ -122,7 +144,7 @@ const Contact = () => {
           gap: "15px"
         }}>
           <a
-            href="https://wa.me/250780000000"
+            href="https://wa.me/250786161794"
             target="_blank"
             rel="noopener noreferrer"
             style={{
@@ -139,7 +161,9 @@ const Contact = () => {
           </a>
 
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:fidelensanzumuhire9@gmail.com"
+            //target="_blank"
+            //rel="noopener noreferrer"
             style={{
               padding: "10px 20px",
               backgroundColor: "#ff0066",
@@ -148,12 +172,15 @@ const Contact = () => {
               fontWeight: "bold",
               textDecoration: "none",
               boxShadow: "0 0 10px #ff0066",
+              display: "inline-block", 
+              cursor: "pointer",        
             }}
+            
           >
             ✉️ Email Me
           </a>
-        </div>
 
+        </div> {/* Closing the missing div */}
         <div style={{ marginTop: "40px", textAlign: "center" }}>
           <a
             //href="/contact"

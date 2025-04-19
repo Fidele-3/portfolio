@@ -52,7 +52,7 @@ const ResumePage = () => {
         >
           <div style={{ display: "flex", alignItems: "center" }}>
             <img
-              src="/your-profile-image.jpg"
+              src="/profile.png"
               alt="NSANZUMUHIRE FIDELE"
               style={{
                 width: "120px",
@@ -78,12 +78,12 @@ const ResumePage = () => {
             </p>
             <p style={{ margin: "0.3rem 0" }}>
               <FaPhone style={{ color: "#0f0", marginRight: "8px" }} />
-              [Insert Your Phone Number]
+              +250 786 161 794
             </p>
             <p style={{ margin: "0.3rem 0" }}>
               <FaGithub style={{ color: "#0f0", marginRight: "8px" }} />
               <a
-                href="https://github.com/yourprofile"
+                href="https://github.com/Fidele-3"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: "#0ff", textDecoration: "none" }}
@@ -94,7 +94,7 @@ const ResumePage = () => {
             <p style={{ margin: "0.3rem 0" }}>
               <FaLinkedin style={{ color: "#0f0", marginRight: "8px" }} />
               <a
-                href="https://linkedin.com/in/yourprofile"
+                href="https://www.linkedin.com/in/nsanzumuhire-fid%C3%A8le-b23aa9325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: "#0ff", textDecoration: "none" }}
@@ -112,7 +112,7 @@ const ResumePage = () => {
           </h2>
           <p style={{ marginTop: "0.5rem" }}>
             Versatile and passionate Software Developer, Cybersecurity Enthusiast, and AI/ML
-            Explorer... [Full summary continues]
+            Explorer with a strong foundation in engineering and design. Proven ability to create
           </p>
         </div>
 
@@ -139,20 +139,20 @@ const ResumePage = () => {
         <div style={{ marginBottom: "1.5rem" }}>
           <h2 style={{ color: "#0f0", borderBottom: "1px solid #0f0" }}>📜 Certifications</h2>
           <ul style={{ paddingLeft: "1.2rem" }}>
-            <li>Risk Management Framework – NIST, USA</li>
-            <li>Advanced Cybersecurity – MINICT, Rwanda</li>
-            <li>Advanced Software/Game Development – MINICT, Rwanda</li>
-            <li>AI & ML Algorithms – Udacity</li>
-            <li>Smart Cities – World Bank via edX</li>
-            <li>CS50 – Harvard University via edX</li>
+            <li>Risk Management Framework – NIST, USA government cyber agency</li>
+            <li>Advanced Cybersecurity – MINICT Rwanda & IHS Towers</li>
+            <li>Advanced Software/Game Development – MINICT Rwanda & IHS Towers</li>
+            <li>AI & ML Algorithms – Udacity & MINICT Rwanda</li>
+            <li>Smart Cities – World Bank </li>
+            <li>CS50 – Harvard University </li>
           </ul>
         </div>
 
         <div style={{ marginBottom: "1.5rem" }}>
           <h2 style={{ color: "#0f0", borderBottom: "1px solid #0f0" }}>🎓 Education</h2>
-          <p>Bachelor’s Degree in Construction Technology</p>
-          <p>Institution: [Insert University Name]</p>
-          <p>Graduation Year: [Insert Year]</p>
+          <p>Advanced Degree in Construction Technology</p>
+          <p>Institution: RP-Kigal colege</p>
+          <p>2024-Present </p>
         </div>
 
         <div style={{ marginBottom: "1.5rem" }}>
@@ -218,23 +218,23 @@ const ResumePage = () => {
           <p>
             GitHub:{' '}
             <a
-              href="https://github.com/yourprofile"
+              href="https://github.com/Fidele-3"
               target="_blank"
               rel="noopener noreferrer"
               style={{ color: "#0ff" }}
             >
-              github.com/yourprofile
+              github.com/Fidele-3
             </a>
           </p>
           <p>
             LinkedIn:{' '}
             <a
-              href="https://linkedin.com/in/yourprofile"
+              href="https://www.linkedin.com/in/nsanzumuhire-fid%C3%A8le-b23aa9325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               target="_blank"
               rel="noopener noreferrer"
               style={{ color: "#0ff" }}
             >
-              linkedin.com/in/yourprofile
+              linkedin.com/in/NSANZUMUHIRE-FIDELE
             </a>
           </p>
           <p>Availability: Open to freelance, remote, or full-time</p>

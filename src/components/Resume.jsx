@@ -49,8 +49,9 @@ const Resume = () => {
         }}>
           <h3 style={{ color: "#00FFD5", fontSize: "1.4rem", marginBottom: "0.5rem" }}>Education</h3>
           <ul>
-            <li>BSc. in Computer Science - Hacker University (2020 - 2023)</li>
-            <li>Cybersecurity Bootcamp - SecurePath (2023)</li>
+            <li>Advanced diploma in construction technology (2024 - present)</li>
+            <li>Cybersecurity , SOD, Game programming - MINICT Rwanda & IHS Towers (2025)</li>
+            <li>CS50 intro to computer science - Harvard university(2024)</li>
           </ul>
         </div>
 
@@ -60,12 +61,16 @@ const Resume = () => {
           padding: "1.5rem",
           borderRadius: "15px",
           boxShadow: "0 0 10px rgba(0,255,180,0.1)"
-        }}>
+               }}>
           <h3 style={{ color: "#00FFD5", fontSize: "1.4rem", marginBottom: "0.5rem" }}>Experience</h3>
           <ul>
-            <li>Software Engineer - TechFlow Inc. (2023 - Present)</li>
-            <li>Cybersecurity Intern - CyberNetX (2022)</li>
+            <li>Software Engineer - Freelance (2023 - Present)</li>
+            <li>Cybersecurity - Freelance (2024)</li>
+            <li>AI & Machine Learning Engineer - Independent Projects (2023 - Present)</li>
+            <li>DevOps & Cloud Solutions Architect - Freelance (2024)</li>
+            <li>System & Network Design Consultant - Independent (2023 - 2024)</li>
           </ul>
+
         </div>
 
         {/* Skills */}
@@ -106,7 +111,7 @@ const Resume = () => {
         gap: "1rem",
         marginTop: "2rem"
       }}>
-        <a href="/files/Nsanzumuhire_Fidele_CV.pdf" download
+        <button onClick={handleViewMore}
           style={{
             backgroundColor: "#00FFCC",
             color: "#000",
@@ -122,7 +127,7 @@ const Resume = () => {
           onMouseOut={e => e.target.style.transform = "scale(1)"}
         >
           Download CV
-        </a>
+        </button>
 
         <button onClick={handleViewMore}
           style={{
