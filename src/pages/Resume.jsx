@@ -52,7 +52,7 @@ const ResumePage = () => {
         >
           <div style={{ display: "flex", alignItems: "center" }}>
             <img
-              src="/profile.png"
+              src="./profile.png"
               alt="NSANZUMUHIRE FIDELE"
               style={{
                 width: "120px",

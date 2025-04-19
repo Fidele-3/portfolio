@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div
       style={{
-        backgroundImage: `url('/HomeBackground.jpg')`,
+        backgroundImage: `url('./HomeBackground.jpg')`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",

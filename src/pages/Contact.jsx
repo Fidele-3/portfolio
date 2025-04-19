@@ -9,7 +9,7 @@ const ContactPage = () => {
     <div style={{
       width: "100vw",
       minHeight: "100vh",
-      backgroundImage: `url('/Contact.jpg')`,
+      backgroundImage: `url('./Contact.jpg')`,
       backgroundSize: "cover",
       backgroundPosition: "center",
       backgroundAttachment: "fixed",
