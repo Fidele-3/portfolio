@@ -49,7 +49,7 @@ const About = () => {
   return (
     <div
       style={{
-        backgroundImage: `url('./About.jpg')`,
+        backgroundImage: `url('./about.jpg')`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",

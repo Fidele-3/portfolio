@@ -74,7 +74,7 @@ const ResumePage = () => {
           <div style={{ textAlign: "right", marginTop: "1rem" }}>
             <p style={{ margin: "0.3rem 0" }}>
               <FaEnvelope style={{ color: "#0f0", marginRight: "8px" }} />
-              fidelnsanzumuhire9@gmail.com
+              fidelensanzumuhire9@gmail.com
             </p>
             <p style={{ margin: "0.3rem 0" }}>
               <FaPhone style={{ color: "#0f0", marginRight: "8px" }} />
@@ -111,8 +111,7 @@ const ResumePage = () => {
             🎯 Professional Summary
           </h2>
           <p style={{ marginTop: "0.5rem" }}>
-            Versatile and passionate Software Developer, Cybersecurity Enthusiast, and AI/ML
-            Explorer with a strong foundation in engineering and design. Proven ability to create
+          Versatile and passionate Software Developer, Cybersecurity Enthusiast, and AI/ML Explorer with a strong foundation in engineering principles and user-centric design. Demonstrated expertise in building efficient, scalable, and secure software solutions across diverse domains. Deeply committed to continuous learning and innovation, with hands-on experience in full-stack development, system architecture, and emerging technologies in artificial intelligence and machine learning. Adept at identifying and mitigating security vulnerabilities while implementing best practices in cybersecurity. Known for a proactive problem-solving approach, collaborative mindset, and the ability to transform complex technical challenges into intuitive, impactful digital experiences.
           </p>
         </div>
 
@@ -262,7 +261,7 @@ const ResumePage = () => {
           </button>
         </div>
       </div>
-      <Footer />
+      
     </div>
   );
 };

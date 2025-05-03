@@ -39,22 +39,31 @@ export default function Navbar() {
       borderBottom: "1px solid rgba(0, 255, 180, 0.2)",
     },
     container: {
-      maxWidth: "1440px",
+      maxWidth: "1200px",
       margin: "0 auto",
-      padding: "1rem 2rem",
+      padding: "0.8rem 1.2rem",
       display: "flex",
       alignItems: "center",
       justifyContent: "space-between",
       fontFamily: "'Courier New', Courier, monospace",
+      flexWrap: "wrap",
+    },
+    brandWrapper: {
+      display: "flex",
+      alignItems: "center",
+      flex: "1 1 auto",
+      minWidth: "0",
     },
     brand: {
-      fontSize: "1.5rem",
+      fontSize: "1.4rem",
       fontWeight: "bold",
       letterSpacing: "2px",
       color: "#00ffc3",
       textShadow: "0 0 10px #00ffc3",
       display: "flex",
-      alignItems: "center",
+      flexDirection: "column",
+      justifyContent: "center",
+      lineHeight: "1.2",
     },
     logoImg: {
       width: "35px",
@@ -63,11 +72,15 @@ export default function Navbar() {
       borderRadius: "50%",
       border: "2px solid #00ffc3",
       boxShadow: "0 0 5px #00ffc3",
+      flexShrink: 0,
     },
     navLinks: {
       display: isMobile ? "none" : "flex",
-      gap: "2rem",
+      gap: "1.5rem",
       listStyle: "none",
+      flex: "1 1 auto",
+      justifyContent: "flex-end",
+      alignItems: "center",
     },
     navLink: (active) => ({
       color: active ? "#00ffcc" : "#88f2e2",
@@ -82,6 +95,7 @@ export default function Navbar() {
         : "none",
       fontWeight: active ? "bold" : "normal",
       transition: "all 0.3s ease",
+      fontSize: "1rem",
     }),
     hamburger: {
       fontSize: "28px",
@@ -90,12 +104,14 @@ export default function Navbar() {
       background: "transparent",
       border: "none",
       cursor: "pointer",
+      marginLeft: "auto",
     },
     mobileMenu: {
       display: menuOpen ? "block" : "none",
-      padding: "1rem 2rem",
       background: "rgba(0, 0, 0, 0.95)",
       borderTop: "1px solid rgba(0, 255, 180, 0.2)",
+      width: "100%",
+      padding: "1rem",
     },
     mobileLink: {
       display: "block",
@@ -113,13 +129,16 @@ export default function Navbar() {
   return (
     <header style={styles.navWrapper}>
       <div style={styles.container}>
-        <div style={styles.brand}>
+        <div style={styles.brandWrapper}>
           <img
             src="./profile.png"
             alt="Logo"
             style={styles.logoImg}
           />
-          NSANZUMUHIRE FIDELE
+          <div style={styles.brand}>
+            NSANZUMUHIRE <br />
+            FIDELE
+          </div>
         </div>
 
         <nav style={styles.navLinks}>

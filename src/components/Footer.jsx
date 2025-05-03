@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer style={{
-      width: "100%",
+      width: "98%",
       backgroundColor: "rgba(0, 0, 0, 0.7)",
       padding: "40px 20px",
       display: "flex",
