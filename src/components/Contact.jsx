@@ -15,18 +15,19 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    emailjs
-      .send(
-        "service_vlrszop",               // Your Service ID
-        "template_54mobbl",              // Your Template ID
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          message: formData.message,
-        },
-        "ezUmBoqb0L48oeJ2Z"           // Replace with your Public Key (found in EmailJS dashboard)
-      )
+  
+    emailjs.send(
+      process.env.REACT_APP_EMAILJS_SERVICE_ID,
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+      {
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+        title: "New Contact Submission",
+      },
+      process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+    )
+    
       .then(
         () => {
           alert("Message sent successfully!");
@@ -38,6 +39,9 @@ const Contact = () => {
         }
       );
   };
+  
+  
+  
   return (
     <div style={{
       width: "100%",
