@@ -16,18 +16,18 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
   
-    emailjs.send(
-      process.env.REACT_APP_EMAILJS_SERVICE_ID,
-      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-      {
-        name: formData.name,
-        email: formData.email,
-        message: formData.message,
-        title: "New Contact Submission",
-      },
-      process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-    )
-    
+    emailjs
+      .send(
+        "service_vlrszop",              
+        "template_54mobbl",             
+        {
+          name: formData.name,           
+          email: formData.email,         
+          message: formData.message,     
+          title: "New Contact Submission", 
+        },
+        "ezUmBoqb0L48oeJ2Z"             
+      )
       .then(
         () => {
           alert("Message sent successfully!");
